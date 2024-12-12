@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="images">
+            <img src="10.png" class="imahe">
+            <div class="slideshow-buttons">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <p class="pick">Choosen size</p>
+            <div class="sizes">
+                <span class="size">Small</span>
+                <span class="size">Medium</span>
+                <span class="size">Large</span>
+                <span class="size">XL</span>
+                <div class="product">
+                    <p class="Headphones"></p>
+                    <h3>SteelSeries Arctis Nova Pro Wireless Headphone</h3>
+                    <h3>Php9,000.00</h3>
+                    <p class="description">The SteelSeries Arctis Nova Pro Wireless headphones deliver exceptional audio performance with high-fidelity
+                         drivers and active noise cancellation, ensuring an immersive and precise sound experience. Featuring a dual-wireless 
+                         system, they allow seamless switching between 2.4GHz wireless and Bluetooth, perfect for multi-platform use. With a 
+                         comfortable design, swappable batteries providing continuous play, and a retractable ClearCast microphone, they are ideal 
+                         for both gaming and everyday use.</p>
+                    <div class="buttons">
+                        <button class="add">Add to Cart</button>
+                        <a href="headphone.html"><button class="back">Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .container {
+        display:flex;
+        justify-content:center;
+        width:35em;
+        background:rgb(40, 246, 4);
+        box-shadow:5px 5px 15px black;
+        border-radius:10px;
+        padding:20px;
+        max-width:500px;
+        margin:auto;
+    }
+    p {
+        font-size:0.6em;
+        color:black;
+        letter-spacing:1px;
+    }
+    .images {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin:auto;
+    }
+    .imahe {
+        width:100%;
+        height:100%;
+        border-radius:5px;
+        margin-right:20px;
+    }
+    .slideshow-buttons {
+        display:flex;
+        justify-content:center;
+        gap:20px;
+    }
+    .slideshow-buttons span {
+        width:7px;
+        height:7px;
+        border-radius:50%;
+        background:black;
+    }
+    .pick {
+        text-transform:uppercase;
+        font-size:20px;
+    }
+    .sizes {
+        display:flex;
+        justify-content:flex-start;
+        column-gap:20px;
+        flex-wrap:wrap;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .size {
+        border:none;
+        width:45px;
+        height:24px;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+        padding:5px;
+        font-size:15px;
+        transition:0.3s ease-in-out, transform 0.3s ease-in-out;
+    }   
+    .size:hover {
+        background:red;
+        color:white;
+        transform:scale(1.1)
+    }
+    .product {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin-right:20px;
+    }
+    #p {
+        text-transform:uppercase;
+    }
+    .par2 {
+        font-size:15px;
+    }
+    .description {
+        text-transform:none;
+        letter-spacing:5;
+        margin-bottom:17px;
+        color:black;
+        font-size:15px;
+        line-height:1.6em;
+        text-align:justify;
+    }
+    .buttons {
+        padding:1px;
+        display:flex;
+        outline:0;
+        border:0;
+        border-radius:2px;
+        letter-spacing:1px;
+        color:white;
+        cursor:pointer;
+    }
+    .buttons:hover {
+        transition:all 0.4s ease-in-out;
+    }
+    .add {
+        width:150px;
+        font-family:Arial, Helvetica, sans-serif;
+        text-transform:uppercase;
+        margin-right: 10px;
+    }
+    .back {
+        width:50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform:uppercase;
+    }
+</style>
